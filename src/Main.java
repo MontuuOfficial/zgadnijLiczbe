@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -70,5 +71,22 @@ public class Main {
                     default -> "Spróbuj czego innego";
                 }
         );
+        //zgadywanie 10 razy
+        Random random = new Random();
+        randomNumber = random.nextInt(1, 101);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Zgadnij liczbę");
+            guessedNumber = scanner.nextInt();
+            if (guessedNumber == randomNumber) {
+                System.out.println("Gratki");
+                break;
+            }
+            else if(guessedNumber > randomNumber){
+                System.out.println("Za dużo");
+            }
+            else {
+                System.out.println("Za mało");
+            }
+        }
     }
 }
