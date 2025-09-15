@@ -45,6 +45,30 @@ public class Main {
             difference = guessedNumber - randomNumber;
         }
         //wyrazenie warunkowe
-        difference = guessedNumber > randomNumber? randomNumber - guessedNumber : guessedNumber - randomNumber;
+        //difference = guessedNumber > randomNumber? randomNumber - guessedNumber : guessedNumber - randomNumber;
+        difference = difference / 10;
+
+        //instrukcja wyboru
+        switch (difference) {
+            case 0:
+                System.out.println("Bardzo blisko");
+                break;
+            case 1:
+                System.out.println("Dość blisko");
+                break;
+            case 2:
+                System.out.println("Git xd");
+            default:
+                System.out.println("Spróbuj czego innego");
+        }
+        //wyrażenie switch
+        System.out.println(
+                switch (difference){
+                    case 0 -> "Bardzo blisko";
+                    case 1 -> "Dość blisko";
+                    case 2 -> "Git xd";
+                    default -> "Spróbuj czego innego";
+                }
+        );
     }
 }
