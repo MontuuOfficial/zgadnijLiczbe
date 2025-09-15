@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Dzień dobry");
@@ -24,5 +26,10 @@ public class Main {
         //Napisz program który losuje liczbe od 1 do 100, następnie zapytaj o nią użytkownika
         int randomNumber = (int)(Math.random() * 100) + 1;
         System.out.println(randomNumber);
+        //wczytywanie liczby z klawiatury
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe ");
+        int zgadywanaLiczba = scanner.nextInt();
+        System.out.println("Podano " + zgadywanaLiczba);
     }
 }
