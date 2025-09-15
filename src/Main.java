@@ -29,7 +29,22 @@ public class Main {
         //wczytywanie liczby z klawiatury
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj liczbe ");
-        int zgadywanaLiczba = scanner.nextInt();
-        System.out.println("Podano " + zgadywanaLiczba);
+        int guessedNumber = scanner.nextInt();
+        System.out.println("Podano " + guessedNumber);
+        if (guessedNumber == randomNumber){
+            System.out.println("Ok");
+        }
+        else {
+            System.out.println("Nie ok");
+        }
+        int difference;
+        if (randomNumber > guessedNumber) {
+            difference = randomNumber - guessedNumber;
+        }
+        else {
+            difference = guessedNumber - randomNumber;
+        }
+        //wyrazenie warunkowe
+        difference = guessedNumber > randomNumber? randomNumber - guessedNumber : guessedNumber - randomNumber;
     }
 }
