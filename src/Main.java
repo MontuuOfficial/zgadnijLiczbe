@@ -20,6 +20,9 @@ public class Main {
         //typ znakowy
         char znak = 'a';
 
-
+        //Zadanie 1
+        //Napisz program który losuje liczbe od 1 do 100, następnie zapytaj o nią użytkownika
+        int randomNumber = (int)(Math.random() * 100) + 1;
+        System.out.println(randomNumber);
     }
 }
