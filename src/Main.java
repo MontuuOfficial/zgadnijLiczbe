@@ -90,3 +90,18 @@ public class Main {
         }
     }
 }
+
+//git
+//git init
+//git config user.email "email"
+//git config user.name "name"
+//git add .
+//git commit -m "tresc comitu"
+//git remote add
+//git push -u origin master
+//git push
+
+//za drugim razem
+//git add .
+//git commit -m "tresc comitu"
+//git push
