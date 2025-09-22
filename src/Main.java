@@ -104,7 +104,7 @@ public class Main {
         //git push
 
         //zgadnij liczbe, dopóki nie zgadniesz
-        Random random = new Random();
+        /*Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int randomNumber = random.nextInt(1, 101);
         System.out.println("Podaj losową liczbę");
@@ -119,6 +119,23 @@ public class Main {
             System.out.println("Podaj losową liczbę");
             guessedNumber = scanner.nextInt();
         }
+        */
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int guessedNumber;
+        int randomNumber = random.nextInt(1, 101);
+        do {
+            System.out.println("Podaj liczbe");
+            guessedNumber = scanner.nextInt();
+            if (randomNumber != guessedNumber) {
+                if (randomNumber < guessedNumber) {
+                    System.out.println("Wpisano za dużo");
+                }
+                else {
+                    System.out.println("Wpisano za mało");
+                }
+            }
+        }while (randomNumber != guessedNumber);
     }
 }
 
