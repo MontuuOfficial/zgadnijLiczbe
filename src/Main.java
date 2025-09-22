@@ -39,7 +39,13 @@ public class Main {
         }
         System.out.println("Suma wszystkich liczb od A do B to " + sumFromAToB);
 
-        System.out.println();
+        System.out.println(sum(2, 6));
+        greeting();
     }
-
+    private static int sum(int a, int b) {
+        return a + b;
+    }
+    private static void greeting() {
+        System.out.println("Siema");
+    }
 }
