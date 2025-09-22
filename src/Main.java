@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Dzień dobry");
-
+        /*
         //typy calkowite
         byte osiem = 8;
         short trzysta = 300;
@@ -87,21 +87,38 @@ public class Main {
             else {
                 System.out.println("Za mało");
             }
+        }*/
+        //git
+        //git init
+        //git config user.email "email"
+        //git config user.name "name"
+        //git add .
+        //git commit -m "tresc comitu"
+        //git remote add
+        //git push -u origin master
+        //git push
+
+        //za drugim razem
+        //git add .
+        //git commit -m "tresc comitu"
+        //git push
+
+        //zgadnij liczbe, dopóki nie zgadniesz
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int randomNumber = random.nextInt(1, 101);
+        System.out.println("Podaj losową liczbę");
+        int guessedNumber = scanner.nextInt();
+        while (randomNumber != guessedNumber) {
+            if (randomNumber < guessedNumber) {
+                System.out.println("Wpisano za dużo");
+            }
+            else {
+                System.out.println("Wpisano za mało");
+            }
+            System.out.println("Podaj losową liczbę");
+            guessedNumber = scanner.nextInt();
         }
     }
 }
 
-//git
-//git init
-//git config user.email "email"
-//git config user.name "name"
-//git add .
-//git commit -m "tresc comitu"
-//git remote add
-//git push -u origin master
-//git push
-
-//za drugim razem
-//git add .
-//git commit -m "tresc comitu"
-//git push
